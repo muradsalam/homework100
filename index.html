@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        html, body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .container{
+            display: flex;
+            width: auto;
+            border: 2px solid red;
+            padding: 6px;
+            justify-content: space-between;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: lime;
+        }
+        .box:nth-child(1) {background-color: blue; flex-basis: 200px; color: lime;}
+        .box:nth-child(2) {background-color: red;}
+        .box:nth-child(3) {background-image: url(mumu.jpeg); background-position: center; background-size: cover;}
+        p{
+            color: grey; margin: 3%;
+        }nav{
+            background-color: rebeccapurple;
+            position: sticky;
+            top: 0;
+        }
+        a{
+            color: white;
+            line-height: 50px;
+            text-decoration: none;
+            padding: 0 15px;
+            border: 3px solid rebeccapurple;
+        }
+
+        section{
+            height: calc(100vh - 50px);
+            scroll-margin-top: 50px;
+            padding: 30px;
+        }
+        #home{
+            background-color: lime;
+        }
+        #galery{
+            background-color: khaki;
+        }
+        #about{
+            background-color: goldenrod;
+        }
+        #contact{
+            background-color: seagreen;
+        }
+        a:hover{
+            border: 3px solid darkmagenta;
+            background-color: darkorchid;
+            padding: 10px 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eveniet, nihil dicta, placeat blanditiis vel repellendus sit itaque possimus dolores aspernatur iure ratione omnis sunt, temporibus dolor. Et, necessitatibus culpa.</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, temporibus?</div>
+        <div class="box"></div>
+    </div>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#galery">GALERY</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <section id="home">
+        <h1>Home page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dicta culpa quaerat! Esse accusamus minima explicabo quaerat enim, molestiae earum eaque molestias animi reprehenderit optio, neque praesentium aspernatur, blanditiis ea.</p>
+        <img style="background-image: url(cover.jpeg); height: 300px; width: 300px; background-size: cover;">
+    </section>
+    <section id="galery">
+        <h1>Galery page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dicta culpa quaerat! Esse accusamus minima explicabo quaerat enim, molestiae earum eaque molestias animi reprehenderit optio, neque praesentium aspernatur, blanditiis ea.</p>
+        <img style="background-image: url(backsize.jpeg); height: 300px; width: 300px; background-size: cover;">
+    </section>
+    <section id="about">
+        <h1>About page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dicta culpa quaerat! Esse accusamus minima explicabo quaerat enim, molestiae earum eaque molestias animi reprehenderit optio, neque praesentium aspernatur, blanditiis ea.</p>
+        <img style="background-image: url(mimi.jpeg); height: 300px; width: 300px; background-size: cover;">
+    </section>
+    <section id="contact">
+        <h1>Contact page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dicta culpa quaerat! Esse accusamus minima explicabo quaerat enim, molestiae earum eaque molestias animi reprehenderit optio, neque praesentium aspernatur, blanditiis ea.</p><img style="background-image: url(mumu.jpeg); height: 300px; width: 300px; background-size: cover;">
+    </section>  
+</body>
+</html>
