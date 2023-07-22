@@ -36,6 +36,7 @@
             background-color: rebeccapurple;
             position: sticky;
             top: 0;
+            z-index: 4;
         }
         a{
             color: white;
@@ -68,9 +69,24 @@
             padding: 10px 15px;
 
         }
+        .header{
+            display: flex;
+            height: 40px;
+            align-items: center;
+            padding: 13px;
+            font-size: 25px;
+            z-index: 3;
+            background-color: darkred;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo">My day</div>
+    </div>
     <div class="container">
         <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eveniet, nihil dicta, placeat blanditiis vel repellendus sit itaque possimus dolores aspernatur iure ratione omnis sunt, temporibus dolor. Et, necessitatibus culpa.</div>
         <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, temporibus?</div>
